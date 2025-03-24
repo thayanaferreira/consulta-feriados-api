@@ -1,5 +1,3 @@
-
----
 # Buscador de DDDs - API REST com Spring Boot
 
 Este projeto é uma API REST construída em Java com Spring Boot que permite consultar informações sobre DDDs (Discagem Direta à Distância) no Brasil. Ela consome dados da [BrasilAPI](https://brasilapi.com.br) e retorna o estado e as cidades correspondentes ao DDD informado.  
@@ -19,14 +17,11 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 - **Documentação para stakeholders no `README.md`**
 - **Swagger** para documentação técnica da API
 
----
 
 ## Funcionalidades da API:
 
 - Consulta de DDDs válidos
 - Retorno com estado e lista de cidades
-
----
 
 ## Planejamento/execução da codificação:
 - [x] Definição do tema e objetivo do projeto
@@ -44,8 +39,6 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 - [ ] Documentação da API via Swagger
 - [ ] Deploy em ambiente de teste (ex: Render, Railway ou localhost)
 - [ ] Atualização final do repositório no GitHub com README finalizado
-
----
 
 ## Estrutura do projeto:
 
@@ -67,8 +60,6 @@ src/
 │           └── service/
 │               └── DddServiceTest.java
 ```
-
----
 
 ## Como executar o projeto:
 ### Pré-requisitos
@@ -97,12 +88,9 @@ Requisição: http://localhost:8080/ddd/61
     "Taguatinga"
   ]
 }
+
 ```
 
----
-
-### Autora:
+## Autora:
   - 👩🏻‍💻 Thayana Ferreira
   - 🔗 https://www.linkedin.com/in/thayana-ferreira-da-silva-2655b861/
-
----
