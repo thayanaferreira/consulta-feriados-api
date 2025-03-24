@@ -1,3 +1,8 @@
+⚠️ __Projeto em construção: Fase de codificação da estrutura inicial.__
+
+---
+
+
 # Buscador de DDDs - API REST com Spring Boot
 
 Este projeto é uma API REST construída em Java com Spring Boot que permite consultar informações sobre DDDs (Discagem Direta à Distância) no Brasil. Ele consome dados da [BrasilAPI](https://brasilapi.com.br) e retorna o estado e as cidades correspondentes ao DDD informado.
