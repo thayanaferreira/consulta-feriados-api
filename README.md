@@ -56,7 +56,7 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 
   - Clone o repositório:
 ```bash git clone https://github.com/thayanaferreira/buscador-ddd-api.git ```  ????
-  - Acesse o projeto:```bash cd buscador-ddd-api```  
+  - Acesse o projeto:```bash cd buscador-ddd-api```  ????
   - Execute a aplicação: ```bash ./gradlew bootRun```
     - ou, se estiver usando Maven: ```bash ./mvnw spring-boot:run```
   - Acesse no navegador: ????
