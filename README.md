@@ -1,6 +1,6 @@
-# Buscador de DDDs - API REST com Spring Boot
+# Consulta de feriados nacionais - API REST com Spring Boot
 
-Este projeto é uma API REST construída em Java com Spring Boot que permite consultar informações sobre DDDs (Discagem Direta à Distância) no Brasil. Ela consome dados da [BrasilAPI](https://brasilapi.com.br) e retorna o estado e as cidades correspondentes ao DDD informado.  
+Este projeto é uma API REST construída em Java com Spring Boot, que permite consultar feriados nacionais do Brasil. As informações são obtidas da API externa [BrasilAPI](https://brasilapi.com.br/docs#tag/Feriados-Nacionais).  
 
 O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e boas práticas de desenvolvimento:
 - **Java 17**
@@ -20,16 +20,16 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 
 ## Funcionalidades da API:
 
-- Consulta de DDDs válidos
-- Retorno com estado e lista de cidades
+- Consulta de feriados por ano
+- Consulta de feriados por ano e mês
 
 ## Planejamento/execução da codificação:
 - [x] Definição do tema e objetivo do projeto
 - [x] Documentação inicial da API no README
 - [x] Criação do projeto com Spring Initializr (Java 17 + Spring Web)
 - [x] Criação da estrutura de pacotes em MVC (`model`, `service`, `controller`)
-- [ ] Consumo da API externa [BrasilAPI](https://brasilapi.com.br)
-- [ ] Implementação do endpoint REST `/ddd/{codigo}`
+- [ ] Consumo da API externa BrasilAPI
+- [ ] Implementação do endpoint REST `/ddd/{codigo}` ????
     - [ ] Model
     - [ ] Service
     - [ ] Controller
@@ -43,22 +43,7 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 ## Estrutura do projeto:
 
 ```bash
-
-src/
-├── main/
-│   ├── java/
-│   │   └── com/thayanaferreira/dddinfo/
-│   │       ├── controller/
-│   │       ├── model/
-│   │       ├── service/
-│   │       └── AplicacaoBuscadorDddApi.java
-│   └── resources/
-│       └── application.properties
-├── test/
-│   └── java/
-│       └── com/thayanaferreira/dddinfo/
-│           └── service/
-│               └── DddServiceTest.java
+//colocar estrutura no final! ????
 ```
 
 ## Como executar o projeto:
@@ -70,24 +55,16 @@ src/
 ### Passos:
 
   - Clone o repositório:
-```bash git clone https://github.com/thayanaferreira/buscador-ddd-api.git ```  
+```bash git clone https://github.com/thayanaferreira/buscador-ddd-api.git ```  ????
   - Acesse o projeto:```bash cd buscador-ddd-api```  
   - Execute a aplicação: ```bash ./gradlew bootRun```
     - ou, se estiver usando Maven: ```bash ./mvnw spring-boot:run```
-  - Acesse no navegador: http://localhost:8080/ddd/{codigo}  
+  - Acesse no navegador: ????
 
 ### Exemplo de resposta:
-Requisição: http://localhost:8080/ddd/61
+Requisição: http://localhost:8080/ddd/61 ????
 ```json
-{
-  "state": "DF",
-  "cities": [
-    "Águas Claras",
-    "Brasília",
-    "Ceilândia",
-    "Taguatinga"
-  ]
-}
+????
 
 ```
 
