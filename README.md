@@ -21,8 +21,8 @@ Este projeto é uma API REST construída em Java com Spring Boot que permite con
 - Spring Web
 - REST APIs
 - BrasilAPI
-- JUnit 5 (para testes)
-- Mockito (para testes)
+- JUnit 5 (para os testes unitários)
+- Mockito (para os testes unitários)
 - IntelliJ IDEA 
 
 ---
@@ -49,25 +49,23 @@ src/
 ```
 
 ## Como executar o projeto:
-- Pré-requisitos
-- Java 17+
-- Maven ou Gradle
-- IDE (ex: IntelliJ, VSCode)
+### Pré-requisitos
+  - Java 17+
+  - Maven ou Gradle
+  - IDE (ex: IntelliJ, VSCode)
 
 ## Passos:
 
-- Clone o repositório:
+  - Clone o repositório:
 ```bash git clone https://github.com/thayanaferreira/buscador-ddd-api.git ```  
-- Acesse o projeto:```bash cd buscador-ddd-api```  
-- Execute a aplicação: ```bash ./gradlew bootRun```
-  - ou, se estiver usando Maven: ```bash ./mvnw spring-boot:run```
-- Acesse no navegador: http://localhost:8080/ddd/{codigo}  
-  - Exemplo: http://localhost:8080/ddd/61  
+  - Acesse o projeto:```bash cd buscador-ddd-api```  
+  - Execute a aplicação: ```bash ./gradlew bootRun```
+    - ou, se estiver usando Maven: ```bash ./mvnw spring-boot:run```
+  - Acesse no navegador: http://localhost:8080/ddd/{codigo}  
 
-### Exemplo de resposta:  
+### Exemplo de resposta:
+Requisição: http://localhost:8080/ddd/61
 ```json
-//http://localhost:8080/ddd/61
-
 {
   "state": "DF",
   "cities": [
@@ -80,5 +78,5 @@ src/
 ```
 
 ### Autora:
-- 👩🏻‍💻 Thayana Ferreira
-- 🔗 https://www.linkedin.com/in/thayana-ferreira-da-silva-2655b861/
+  - 👩🏻‍💻 Thayana Ferreira
+  - 🔗 https://www.linkedin.com/in/thayana-ferreira-da-silva-2655b861/
