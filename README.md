@@ -28,10 +28,10 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 - [x] Documentação inicial da API no README
 - [x] Criação do projeto com Spring Initializr (Java 17 + Spring Web)
 - [x] Criação da estrutura de pacotes em MVC (`model`, `service`, `controller`)
-- [ ] Consumo da API externa BrasilAPI
-- [ ] Implementação do endpoint REST `/ddd/{codigo}` ????
-    - [ ] Model
-    - [ ] Service
+- [x] Consumo da API externa BrasilAPI
+- [x] Implementação do endpoint REST `/ddd/{codigo}` ????
+    - [x] Model
+    - [x] Service
     - [ ] Controller
 - [ ] Testes com requisições reais e tratamento de erros
 - [ ] Execução bem-sucedida com Spring Boot
