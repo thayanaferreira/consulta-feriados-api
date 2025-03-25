@@ -4,10 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AplicacaoConsultaFeriados {
-
+public class FeriadosApiApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AplicacaoConsultaFeriados.class, args);
+        SpringApplication.run(FeriadosApiApplication.class, args);
     }
-
 }
