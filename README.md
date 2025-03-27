@@ -29,21 +29,44 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 - [x] Criação do projeto com Spring Initializr (Java 17 + Spring Web)
 - [x] Criação da estrutura de pacotes em MVC (`model`, `service`, `controller`)
 - [x] Consumo da API externa BrasilAPI
-- [x] Implementação do endpoint REST `/ddd/{codigo}` ????
+- [x] Implementação dos endpoints REST `/feriados/ano` e `/feriados/ano/mes`
     - [x] Model
     - [x] Service
-    - [ ] Controller
-- [ ] Testes com requisições reais e tratamento de erros
-- [ ] Execução bem-sucedida com Spring Boot
+    - [x] Controller
+- [x] Execução bem-sucedida com Spring Boot
+- [ ] Teste manual em ambiente local e tratamento de erros
 - [ ] Escrita de testes unitários (JUnit + Mockito)
 - [ ] Documentação da API via Swagger
 - [ ] Deploy em ambiente de teste (ex: Render, Railway ou localhost)
 - [ ] Atualização final do repositório no GitHub com README finalizado
 
 ## Estrutura do projeto:
+Abaixo está a organização dos arquivos principais da aplicação:
 
 ```bash
-//colocar estrutura no final! ????
+consulta-feriados-api/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── consultaferiados/
+│   │   │       ├── controller/
+│   │   │       │   └── FeriadosController.java
+│   │   │       ├── model/
+│   │   │       │   └── Feriados.java
+│   │   │       ├── service/
+│   │   │       │   └── FeriadosService.java
+│   │   │       └── FeriadosApiApplication.java
+│   │   └── resources/
+│   │       ├── static/
+│   │       ├── templates/
+│   │       └── application.properties
+│   └── test/
+│       └── java/
+│           └── consultaferiados/
+│               └── AplicacaoTests.java
+├── README.md
+├── build.gradle
+├── settings.gradle
 ```
 
 ## Como executar o projeto:
@@ -55,17 +78,16 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 ### Passos:
 
   - Clone o repositório:
-```bash git clone https://github.com/thayanaferreira/buscador-ddd-api.git ```  ????
-  - Acesse o projeto:```bash cd buscador-ddd-api```  ????
-  - Execute a aplicação: ```bash ./gradlew bootRun```
-    - ou, se estiver usando Maven: ```bash ./mvnw spring-boot:run```
-  - Acesse no navegador: ????
+```git clone https://github.com/thayanaferreira/consulta-feriados-api ```
+  - Acesse o projeto:```cd consulta-feriados-api``` 
+  - Execute a aplicação: ```./gradlew bootRun```
+    - ou, se estiver usando Maven: ```./mvnw spring-boot:run```
+  - Acesse no navegador: http://localhost:8080/feriados/{ano} ou http://localhost:8080/feriados/{ano}/{mes}
 
 ### Exemplo de resposta:
-Requisição: http://localhost:8080/ddd/61 ????
+Requisição: http://localhost:8080/feriados/2025
 ```json
-????
-
+[{"date":"2025-03-04","name":"Carnaval","type":"national"}]
 ```
 
 ## Autora:

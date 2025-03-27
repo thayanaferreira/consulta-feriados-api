@@ -1,6 +1,6 @@
 package consultaferiados.service;
 
-import consultaferiados.model.Feriado;
+import consultaferiados.model.Feriados;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -8,18 +8,21 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class FeriadoService {
+public class FeriadosService {
+    //endpois da api externa, onde é so adicionar o ano. ex: https://brasilapi.com.br/api/feriados/v1/2025
     private static final String API_URL = "https://brasilapi.com.br/api/feriados/v1/";
 
-    public List<Feriado> getFeriadosByAno(String ano) {
+    //lista filtrada por ano
+    public List<Feriados> getFeriadosByAno(String ano) {
         RestTemplate restTemplate = new RestTemplate();
-        Feriado[] feriados = restTemplate.getForObject(API_URL + ano, Feriado[].class);
+        Feriados[] feriados = restTemplate.getForObject(API_URL + ano, Feriados[].class);
         assert feriados != null;
         return List.of(feriados);
     }
 
-    public List<Feriado> getFeriadosByAnoEMes(String ano, String mes) {
-        List<Feriado> feriados = getFeriadosByAno(ano);
+    //lista filtrada por ano e mes
+    public List<Feriados> getFeriadosByAnoEMes(String ano, String mes) {
+        List<Feriados> feriados = getFeriadosByAno(ano);
         return feriados.stream()
                 .filter(f -> f.getDate().startsWith(ano + "-" + String.format("%02d", Integer.parseInt(mes))))
                 .collect(Collectors.toList());

@@ -1,6 +1,6 @@
 package consultaferiados.model;
 
-public class Feriado {
+public class Feriados {
     private String date;
     private String name;
     private String type;
