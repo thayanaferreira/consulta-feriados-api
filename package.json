@@ -1,0 +1,25 @@
+{
+  "name": "consulta-feriados-api",
+  "version": "1.0.0",
+  "description": "Este projeto é uma API REST construída em Java com Spring Boot, que permite consultar feriados nacionais do Brasil. As informações são obtidas da API externa [BrasilAPI](https://brasilapi.com.br/docs#tag/Feriados-Nacionais).",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thayanaferreira/consulta-feriados-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thayanaferreira/consulta-feriados-api/issues"
+  },
+  "homepage": "https://github.com/thayanaferreira/consulta-feriados-api#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "husky": "^9.1.7"
+  }
+}

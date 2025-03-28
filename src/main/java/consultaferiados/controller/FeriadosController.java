@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/feriados")
-class FeriadosController {
+public class FeriadosController {
     //feriadoService é a variável que guarda o meu objeto service que foi injetado pelo springboot.
     private final FeriadosService feriadosService;
 

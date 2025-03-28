@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class FeriadosService {
     //endpois da api externa, onde é so adicionar o ano. ex: https://brasilapi.com.br/api/feriados/v1/2025
     private static final String API_URL = "https://brasilapi.com.br/api/feriados/v1/";
+    //https://brasilapi.com.br/api/feriados/v1/2025 url da api externa
 
     //lista filtrada por ano
     public List<Feriados> getFeriadosByAno(String ano) {
@@ -24,7 +25,7 @@ public class FeriadosService {
     public List<Feriados> getFeriadosByAnoEMes(String ano, String mes) {
         List<Feriados> feriados = getFeriadosByAno(ano);
         return feriados.stream()
-                .filter(f -> f.getDate().startsWith(ano + "-" + String.format("%02d", Integer.parseInt(mes))))
+                .filter(f -> f.getData().startsWith(ano + "-" + String.format("%02d", Integer.parseInt(mes))))
                 .collect(Collectors.toList());
     }
 }

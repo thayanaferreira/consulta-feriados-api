@@ -1,31 +1,40 @@
 package consultaferiados.model;
 
 public class Feriados {
-    private String date;
-    private String name;
-    private String type;
+    private String data;
+    private String nome;
+    private String tipo;
 
-    public String getDate(){
-        return date;
+    public Feriados() {
     }
 
-    public void setDate(String date){
-        this.date = date;
+    public Feriados(String nome, String data, String tipo) {
+        this.nome = nome;
+        this.data = data;
+        this.tipo = tipo;
     }
 
-    public String getName(){
-        return name;
+    public String getData(){
+        return data;
     }
 
-    public void setName(String name){
-        this.name = name;
+    public void setData(String date){
+        this.data = date;
     }
 
-    public String getType(){
-        return type;
+    public String getNome(){
+        return nome;
     }
 
-    public void setType(String type){
-        this.type = type;
+    public void setNome(String name){
+        this.nome = name;
+    }
+
+    public String getTipo(){
+        return tipo;
+    }
+
+    public void setTipo(String type){
+        this.tipo = type;
     }
 }

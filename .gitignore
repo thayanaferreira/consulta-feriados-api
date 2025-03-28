@@ -51,3 +51,9 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/consultaferiados.FeriadosServiceTest/**/bin/
+
+### Commitlint + Husky ###
+.husky/
+node_modules/
+commitlint.config.js
+
