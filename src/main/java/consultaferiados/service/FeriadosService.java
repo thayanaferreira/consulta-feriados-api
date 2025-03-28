@@ -24,7 +24,7 @@ public class FeriadosService {
     public List<Feriados> getFeriadosByAnoEMes(String ano, String mes) {
         List<Feriados> feriados = getFeriadosByAno(ano);
         return feriados.stream()
-                .filter(f -> f.getDate().startsWith(ano + "-" + String.format("%02d", Integer.parseInt(mes))))
+                .filter(f -> f.getData().startsWith(ano + "-" + String.format("%02d", Integer.parseInt(mes))))
                 .collect(Collectors.toList());
     }
 }
