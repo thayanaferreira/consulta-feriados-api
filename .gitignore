@@ -1,7 +1,7 @@
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
-!**/src/test/**/out/
+!**/src/consultaferiados.FeriadosServiceTest/**/out/
 .idea/
 buscador-ddd-api.iml
 
@@ -15,7 +15,7 @@ buscador-ddd-api.iml
 .sts4-cache
 bin/
 !**/src/main/**/bin/
-!**/src/test/**/bin/
+!**/src/consultaferiados.FeriadosServiceTest/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -38,7 +38,7 @@ HELP.md
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
-!**/src/test/**/build/
+!**/src/consultaferiados.FeriadosServiceTest/**/build/
 
 ### STS ###
 .apt_generated
@@ -50,4 +50,4 @@ build/
 .sts4-cache
 bin/
 !**/src/main/**/bin/
-!**/src/test/**/bin/
+!**/src/consultaferiados.FeriadosServiceTest/**/bin/

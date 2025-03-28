@@ -60,7 +60,7 @@ consulta-feriados-api/
 │   │       ├── static/
 │   │       ├── templates/
 │   │       └── application.properties
-│   └── test/
+│   └── consultaferiados.FeriadosServiceTest/
 │       └── java/
 │           └── consultaferiados/
 │               └── AplicacaoTests.java
