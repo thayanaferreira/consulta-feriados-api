@@ -17,7 +17,6 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 - **Documentação para stakeholders no `README.md`**
 - **Swagger** para documentação técnica da API
 
-
 ## Funcionalidades da API:
 
 - Consulta de feriados por ano
@@ -34,7 +33,7 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
     - [x] Service
     - [x] Controller
 - [x] Execução bem-sucedida com Spring Boot
-- [ ] Teste manual em ambiente local e tratamento de erros
+- [x] Teste manual em ambiente local e tratamento de erros
 - [ ] Escrita de testes unitários (JUnit + Mockito)
 - [ ] Documentação da API via Swagger
 - [ ] Deploy em ambiente de teste (ex: Render, Railway ou localhost)
@@ -70,12 +69,13 @@ consulta-feriados-api/
 ```
 
 ## Como executar o projeto:
-### Pré-requisitos
+
+#### Pré-requisitos
   - Java 17+
   - Maven ou Gradle
   - IDE (ex: IntelliJ, VSCode)
 
-### Passos:
+#### Passos:
 
   - Clone o repositório:
 ```git clone https://github.com/thayanaferreira/consulta-feriados-api ```
@@ -84,11 +84,48 @@ consulta-feriados-api/
     - ou, se estiver usando Maven: ```./mvnw spring-boot:run```
   - Acesse no navegador: http://localhost:8080/feriados/{ano} ou http://localhost:8080/feriados/{ano}/{mes}
 
-### Exemplo de resposta:
+#### Exemplo de resposta:
 Requisição: http://localhost:8080/feriados/2025
 ```json
 [{"date":"2025-03-04","name":"Carnaval","type":"national"}]
 ```
+
+### Commitlint + Husky
+Este projeto utiliza [**Commitlint**](https://www.conventionalcommits.org/pt-br/v1.0.0/) e [**Husky**](https://typicode.github.io/husky/) para garantir que as mensagens de commit sigam o padrão [**Conventional Commits**](https://www.conventionalcommits.org/pt-br/v1.0.0/).  
+
+#### Por que uso isso:
+
+- Garante mensagens de commit claras e padronizadas
+- Facilita a leitura do histórico de mudanças
+- Permite geração automática de changelogs no futuro
+- Ajuda na integração com ferramentas de CI/CD
+
+#### Como funciona:
+Toda vez que um git commit for executado, o Husky aciona automaticamente o Commitlint para validar a mensagem do commit.
+Se a mensagem não estiver no padrão, o commit será bloqueado com uma mensagem de erro.
+
+#### Exemplo de commit válido:  
+```bash 
+feat: adiciona endpoint para buscar feriados por mês
+```
+
+#### Exemplo de commit inválido:  
+
+```bash 
+ajuste filtro api
+```
+
+#### Como ativar os hooks do Husky após clonar o projeto:
+Após clonar o repositório, rode os seguintes comandos para instalar as dependências e ativar os hooks do Husky:  
+
+```bash 
+npm install
+```
+
+O script "prepare" no package.json ativa automaticamente os hooks do Husky ao rodar o npm install.
+
+#### Requisitos:
+- Node.js instalado (a versão LTS é recomendada)
 
 ## Autora:
   - 👩🏻‍💻 Thayana Ferreira
