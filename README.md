@@ -14,7 +14,7 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
 - **JUnit 5 e Mockito** para os testes unitários
 - **Spring DevTools** para hot reload no desenvolvimento
 - **IntelliJ IDEA** como IDE principal
-- **Documentação para stakeholders no `README.md`**
+- **Documentação dequalidade (no `README.md`)**
 - **Swagger** para documentação técnica da API
 
 ## Funcionalidades da API:
