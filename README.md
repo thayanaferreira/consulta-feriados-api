@@ -34,7 +34,7 @@ O objetivo deste projeto é demonstrar a aplicação das seguintes tecnologias e
     - [x] Controller
 - [x] Execução bem-sucedida com Spring Boot
 - [x] Teste manual em ambiente local e tratamento de erros
-- [ ] Escrita de testes unitários (JUnit + Mockito)
+- [x] Escrita de testes unitários (JUnit + Mockito)
 - [ ] Documentação da API via Swagger
 - [ ] Atualização final do repositório no GitHub com README finalizado
 
