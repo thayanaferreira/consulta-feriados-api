@@ -1,65 +1,24 @@
 package consultaferiados.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@Getter
+@Setter
+@NoArgsConstructor //gera um construtor sem argumentos para mim
+@AllArgsConstructor //gera um construtor com todas as minhas variaveis como parametro
+
 public class Feriados {
+
+    @JsonProperty("date")
     private String data;
+
+    @JsonProperty("name")
     private String nome;
+
+    @JsonProperty("type")
     private String tipo;
-
-<<<<<<< HEAD
-    public Feriados() {
-    }
-
-    public Feriados(String nome, String data, String tipo) {
-        this.nome = nome;
-        this.data = data;
-        this.tipo = tipo;
-    }
-
-    public String getData(){
-        return data;
-    }
-
-    public void setData(String date){
-        this.data = date;
-    }
-
-    public String getNome(){
-        return nome;
-    }
-
-    public void setNome(String name){
-        this.nome = name;
-    }
-
-=======
-    public Feriados(String nome, String data, String tipo) {
-        this.nome = nome;
-        this.data = data;
-        this.tipo = tipo;
-    }
-
-    public String getData(){
-        return data;
-    }
-
-    public void setData(String date){
-        this.data = date;
-    }
-
-    public String getNome(){
-        return nome;
-    }
-
-    public void setNome(String name){
-        this.nome = name;
-    }
-
->>>>>>> 34cf2e1e474cb64e23d86b121c9784d32aa5b8bf
-    public String getTipo(){
-        return tipo;
-    }
-
-    public void setTipo(String type){
-        this.tipo = type;
-    }
 }

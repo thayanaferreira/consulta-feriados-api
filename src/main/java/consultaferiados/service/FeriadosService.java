@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 @Service
 public class FeriadosService {
     //endpois da api externa, onde é so adicionar o ano. ex: https://brasilapi.com.br/api/feriados/v1/2025
-    private static final String API_URL = "https://brasilapi.com.br/api/feriados/v1/";
-    //https://brasilapi.com.br/api/feriados/v1/2025 url da api externa
+    private static final String API_URL = "https://brasilapi.com.br/api/feriados/v1/"; //que vai concatenar com o parametro e ficar assim: brasilapi.com.br/api/feriados/v1/2025 url da api externa
+
 
     //lista filtrada por ano
     public List<Feriados> getFeriadosByAno(String ano) {
@@ -19,6 +19,8 @@ public class FeriadosService {
         Feriados[] feriados = restTemplate.getForObject(API_URL + ano, Feriados[].class);
         assert feriados != null;
         return List.of(feriados);
+            //List<Feriados> lista = List.of(feriados);
+            //return lista;
     }
 
     //lista filtrada por ano e mes

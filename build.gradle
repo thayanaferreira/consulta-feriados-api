@@ -22,6 +22,10 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para usar Lombok no código principal (sem incluir no JAR)
+	annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para processar as anotações no código principal
+	testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para usar Lombok nos testes
+	testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para processar as anotações nos testes
 }
 
 tasks.named('test') {
