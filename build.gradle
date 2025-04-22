@@ -26,6 +26,7 @@ dependencies {
 	annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para processar as anotações no código principal
 	testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para usar Lombok nos testes
 	testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.38' //para processar as anotações nos testes
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
 }
 
 tasks.named('test') {
